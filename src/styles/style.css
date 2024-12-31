@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #4E523A; /* New Olive Green */
+    --secondary-color: #CCCCD6; /* New Grey */
+    --background-color: #101010; /* New Black */
+    --text-color: #CCCCD6; /* New Grey for text */
+    --placeholder-color: #AAAAAA; /* Light Grey for placeholders */
+    --box-background-color: #2C2C2C; /* Dark Grey for the working box */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 100px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 20px; /* Space between the logo and the title */
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the titles on one another */
+}
+
+h1 {
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: var(--box-background-color); /* Dark Grey for the working box */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button-container button, form button, .routine-buttons button {
+    width: 150px; /* Set a fixed width for all buttons */
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover, form button:hover, .routine-buttons button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form select, form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Ensure consistent font type */
+    color: var(--text-color); /* Ensure consistent text color */
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+form select::placeholder, form input::placeholder, form textarea::placeholder {
+    color: var(--placeholder-color); /* Light grey color for placeholder text */
+}
+
+#protein-status {
+    margin-top: 20px; /* Add spacing between the status message and the submit button */
+    text-align: center; /* Center the status message */
+}
+
+.routine {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+.set {
+    margin-top: 10px;
+}
+
+.routine div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.routine label {
+    margin-bottom: 5px;
+}
+
+.routine select, .routine input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Ensure consistent font type */
+    color: var(--text-color); /* Ensure consistent text color */
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+.routine select::placeholder, .routine input::placeholder {
+    color: var(--placeholder-color); /* Light grey color for placeholder text */
+}
+
+.routine-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
